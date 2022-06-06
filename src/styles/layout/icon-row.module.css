@@ -1,0 +1,22 @@
+@value greenColor, orangeColor from "styles/colors.css";
+
+.icon-row {
+  position: fixed;
+  bottom: 10%;
+  font-size: 4rem;
+}
+
+.icon-row > ul {
+  display: flex;
+  align-content: center;
+}
+
+.icon-row > ul > li {
+  margin: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-row > ul > li:hover {
+  cursor: pointer;
+  color: greenColor;
+}

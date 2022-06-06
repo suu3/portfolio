@@ -1,0 +1,14 @@
+.about {
+  padding: 10% 4%;
+}
+
+.article {
+  font-size: 1.6rem;
+  font-family: "NEXON Lv1 Gothic OTF Light";
+  line-height: 3rem;
+  margin-bottom: 30rem;
+}
+
+.article > p {
+  margin: 2rem 0;
+}

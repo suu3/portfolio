@@ -1,0 +1,14 @@
+.header {
+  font-size: 8rem;
+  padding-bottom: 1rem;
+  width: 0;
+  border-bottom: 1px solid gray;
+  animation: border-100 1.5s linear forwards;
+}
+@keyframes border-100 {
+  0% {
+  }
+  100% {
+    width: 100%;
+  }
+}
