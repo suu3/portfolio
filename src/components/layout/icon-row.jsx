@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import styles from "styles/layout/icon-row.module.css";
 import { AiFillGithub, AiFillMail } from "react-icons/ai";
 import { ImBlogger } from "react-icons/im";
@@ -29,4 +29,4 @@ const IconRow = () => {
   );
 };
 
-export default IconRow;
+export default memo(IconRow);

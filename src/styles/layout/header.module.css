@@ -15,10 +15,12 @@
   align-items: center;
   justify-content: center;
   z-index: 999;
-  animation: headerColor 1s linear forwards;
+  background-color: var(--last-color);
+  transition: all 1s linear;
+  /* animation: headerColor 1s linear forwards; */
   /* background: linear-gradient(-20deg, transparent 75%, black 25%); */
   box-shadow: 2px 1px 10px 1px rgba(0, 0, 0, 0.5);
-  animation: headerColor 1s linear forwards;
+  /* transition: all 1s linear; */
 }
 
 .profile {

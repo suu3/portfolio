@@ -2,25 +2,36 @@ import React, { memo, useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import styles from "styles/layout/header.module.css";
 import { IMAGES } from "lib/assets";
-import { FaRocket, FaStarAndCrescent } from "react-icons/fa";
+import { FaRocket } from "react-icons/fa";
 import IconRow from "./icon-row";
+import { useDispatch } from "react-redux";
+import { changeFirstColor, changeSecondColor } from "redux/color";
+import { useSelector } from "react-redux";
 
 const Header = () => {
-  const [headerColor, setHeaderColor] = useState("#536976");
   const location = useLocation();
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const { value } = useSelector((state) => state.color);
   useEffect(() => {
     if (location.pathname === "/about") {
-      setHeaderColor("white");
-      console.log(headerColor);
+      // dispatch(changeFirstColor(value.secondColor));
+      dispatch(changeSecondColor(styles[`orangeColor`]));
+    } else if (location.pathname === "/skills") {
+      // dispatch(changeFirstColor(value.secondColor));
+      dispatch(changeSecondColor("#2A2550"));
     } else {
-      setHeaderColor("#536976");
+      // dispatch(changeFirstColor(value.secondColor));
+      dispatch(changeSecondColor("#A5BECC"));
     }
-  }, [headerColor, location.pathname]);
+  }, [dispatch, location.pathname, value.secondColor]);
   return (
     <header
       className={`${styles[`header`]}`}
-      style={{ "--color": headerColor }}
+      style={{
+        // "--first-color": value.firstColor,
+        "--last-color": value.secondColor,
+      }}
     >
       <div className={styles[`profile`]}>
         <div className={styles[`profile-rocket`]}>
