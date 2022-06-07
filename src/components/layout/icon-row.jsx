@@ -8,10 +8,18 @@ const IconRow = () => {
     <nav className={styles[`icon-row`]}>
       <ul>
         <li>
-          <AiFillGithub />
+          <AiFillGithub
+            onClick={() => {
+              window.location.href = "https://github.com/suu3";
+            }}
+          />
         </li>
         <li>
-          <ImBlogger />
+          <ImBlogger
+            onClick={() => {
+              window.location.href = "https://temp-ha3.tistory.com/";
+            }}
+          />
         </li>
         <li>
           <AiFillMail />

@@ -1,5 +1,8 @@
+@value greenColor, orangeColor, darkGrayColor from "styles/colors.css";
+
 .about {
   padding: 10% 4%;
+  background-color: darkGrayColor;
 }
 
 .article {

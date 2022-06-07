@@ -10,12 +10,13 @@ const Project = lazy(() => import("pages/project"));
 
 export default function Routes() {
   const routes = useRoutes([
+    { index: true, element: <Home /> },
+
     {
       path: "/",
       element: <LayoutContainer />,
       children: [
         { path: "*", element: <Error /> },
-        { index: true, element: <Home /> },
         {
           path: "about",
           element: <About />,

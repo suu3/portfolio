@@ -1,43 +1,69 @@
-@value greenColor, grayColor, orangeColor from "styles/colors.css";
+@value greenColor, darkGrayColor, errorColor, orangeColor from "styles/colors.css";
 
 .home {
-  display: flex;
-  justify-content: center;
-  padding-left: 10%;
   height: 100vh;
-  flex-direction: column;
-  background-color: grayColor;
   overflow: hidden;
+  width: 100%;
+  background: linear-gradient(to bottom, #ffffff, #ffffff, #fff7e0);
+
+  display: flex;
+}
+
+.home > header {
+  position: fixed;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  padding-left: 8%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
-  /* background: linear-gradient(20deg, #809b8b, #415663, #090a13); */
 }
 
-.home::after {
-  content: "";
-  width: 80rem;
-  background-color: blue;
-  height: 80rem;
-  border-radius: 10rem;
-  position: absolute;
-  bottom: -20%;
-  right: -10%;
-  opacity: 0.5;
+.menu {
+  width: 40%;
 }
 
-.home h2:not(.highlight h2) {
+.first {
   z-index: 999;
   font-size: 10rem;
-  font-family: "Cafe24Ohsquare";
-  padding: 2rem 0;
-  color: white;
+  font-family: "NEXON Lv1 Gothic OTF Light";
+}
+.second {
+  z-index: 999;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "NEXON Lv1 Gothic OTF Light";
 
+  font-size: 10rem;
+}
+
+.second > h2:first-child {
+  margin-right: 2rem;
+}
+.second > h2:nth-child(2) {
+  font-family: "Cafe24Ohsquare";
+
+  color: white;
   text-shadow: -5px -5px 0 #000, 5px -5px 0 #000, -5px 5px 0 #000,
     5px 5px 0 #000;
 }
-
 .highlight {
+  z-index: 999;
   font-size: 10rem;
   font-family: "Cafe24Ohsquare";
+  align-items: center;
+  display: flex;
+  color: orangeColor;
+  /* font-family: "Cafe24Ohsquare";
   padding: 2rem 0;
   background: linear-gradient(
     to right,
@@ -47,15 +73,27 @@
     greenColor
   );
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
-
+.highlight h2 {
+  margin-right: 2rem;
+}
+/*
+.highlight svg {
+  animation: moveRabbit 2s linear 3.5s forwards;
+}
+@keyframes moveRabbit {
+  100% {
+    transform: translateX(2000%);
+  }
+} */
 .rocket {
   position: absolute;
-  top: 3rem;
+  top: 8%;
+  left: 4%;
   font-size: 10rem;
-  color: yellow;
-  animation: floating 10s linear infinite;
+  color: indigo;
+  /* animation: floating 10s linear infinite; */
 }
 
 .star {
@@ -63,19 +101,19 @@
   bottom: 10%;
   transform: rotate(120deg);
   right: 10%;
-  font-size: 10rem;
+  font-size: 8rem;
   color: violet;
-  animation: floating2 10s linear infinite;
+  /* animation: floating2 8s linear infinite; */
 }
 
 .moon {
   position: absolute;
-  top: 20%;
-  transform: rotate(120deg);
+  top: 50%;
+  transform: rotate(-30deg);
   right: 30%;
-  font-size: 10rem;
+  font-size: 11rem;
   color: tomato;
-  animation: floating2 10s linear infinite;
+  /* animation: floating2 12s ease-in-out infinite; */
 }
 @keyframes floating {
   0% {
@@ -111,4 +149,55 @@
   100% {
     transform: translate(10%, -30%);
   }
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.menu > div {
+  font-size: 5rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: darkGrayColor;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu > div > p {
+  font-size: 2rem;
+  padding-top: 1rem;
+  color: errorColor;
+  animation: opacity 1s linear infinite alternate;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.menu > div:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+  opacity: 0.5;
+}
+
+.menu > div:nth-child(odd) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.menu > div:nth-child(3) {
+  grid-row-start: 3;
+}
+.menu > div:nth-child(even) {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-column-end: 3;
 }

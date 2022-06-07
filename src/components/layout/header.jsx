@@ -27,21 +27,44 @@ const Header = () => {
           <FaRocket />
         </div>
         <img onClick={() => navigate("/")} src={IMAGES.PROFILE} alt="home" />
-        <h1>SUU3</h1>
       </div>
       <nav>
         <ul className={styles[`nav`]}>
+          <h1>SUU3</h1>
           <li onClick={() => navigate("/about")}>
-            <FaStarAndCrescent style={{ color: "tomato" }} />
-            <span>About</span>
+            <span
+              style={
+                location.pathname === "/about"
+                  ? { color: styles[`greenColor`] }
+                  : { color: "black" }
+              }
+            >
+              ABOUT
+            </span>
           </li>
+          <div className={styles[`border`]}></div>
           <li onClick={() => navigate("/skills")}>
-            <FaStarAndCrescent style={{ color: "tomato" }} />
-            <span>Skills</span>
+            <span
+              style={
+                location.pathname === "/skills"
+                  ? { color: styles[`greenColor`] }
+                  : { color: "black" }
+              }
+            >
+              SKILLS
+            </span>
           </li>
+          <div className={styles[`border`]}></div>
           <li onClick={() => navigate("/project")}>
-            <FaRocket style={{ color: "indigo" }} />
-            <span>Project</span>
+            <span
+              style={
+                location.pathname === "/project"
+                  ? { color: styles[`greenColor`] }
+                  : { color: "black" }
+              }
+            >
+              PROJECT
+            </span>
           </li>
         </ul>
       </nav>
