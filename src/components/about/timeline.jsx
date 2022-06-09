@@ -4,12 +4,11 @@ import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
+import DriveFileRenameOutlineIcon from "@mui/icons-material/DriveFileRenameOutline";
 import TimelineDot from "@mui/lab/TimelineDot";
-import FastfoodIcon from "@mui/icons-material/Fastfood";
+import CakeIcon from "@mui/icons-material/Cake";
 import LaptopMacIcon from "@mui/icons-material/LaptopMac";
-import HotelIcon from "@mui/icons-material/Hotel";
-import RepeatIcon from "@mui/icons-material/Repeat";
+import SchoolIcon from "@mui/icons-material/School";
 import Typography from "@mui/material/Typography";
 
 export default function TimeLine() {
@@ -18,7 +17,7 @@ export default function TimeLine() {
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot>
-            <FastfoodIcon />
+            <CakeIcon />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -32,11 +31,11 @@ export default function TimeLine() {
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot color="primary">
-            <LaptopMacIcon />
+            <DriveFileRenameOutlineIcon />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2 }}>
+        <TimelineContent data-aos="fade-right" sx={{ py: "12px", px: 2 }}>
           <Typography variant="h5" component="span">
             2013. 03
           </Typography>
@@ -46,12 +45,27 @@ export default function TimeLine() {
       <TimelineItem>
         <TimelineSeparator>
           <TimelineConnector />
-          <TimelineDot color="primary" variant="outlined">
-            <HotelIcon />
+          <TimelineDot color="primary">
+            <DriveFileRenameOutlineIcon />
           </TimelineDot>
-          <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
+          <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2 }}>
+        <TimelineContent data-aos="fade-right" sx={{ py: "12px", px: 2 }}>
+          <Typography variant="h5" component="span">
+            2013. 03
+          </Typography>
+          <Typography>안산 동산고 졸업</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary" variant="outlined">
+            <SchoolIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent data-aos="fade-left" sx={{ py: "12px", px: 2 }}>
           <Typography variant="h5" component="span">
             2016. 03
           </Typography>
@@ -60,17 +74,16 @@ export default function TimeLine() {
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
-          <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-          <TimelineDot color="secondary">
-            <RepeatIcon />
-          </TimelineDot>
           <TimelineConnector />
+          <TimelineDot color="primary" variant="outlined">
+            <SchoolIcon />
+          </TimelineDot>
         </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2 }}>
-          <Typography variant="h6" component="span">
-            Repeat
+        <TimelineContent data-aos="fade-left" sx={{ py: "12px", px: 2 }}>
+          <Typography variant="h5" component="span">
+            2022. 08
           </Typography>
-          <Typography>Because this is the life you love!</Typography>
+          <Typography>이화여자대학교 졸업</Typography>
         </TimelineContent>
       </TimelineItem>
     </Timeline>

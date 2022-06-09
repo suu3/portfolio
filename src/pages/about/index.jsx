@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import CommonHeader from "components/common-header";
 import styles from "styles/about/index.module.css";
 import TimeLine from "components/about/timeline";
+import SubTitle from "components/sub-title";
 const About = (props) => {
   useEffect(() => {
     AOS.init();
@@ -36,6 +37,7 @@ const About = (props) => {
           진행하면서 팀원 간의 소통 방법을 익혀왔습니다.
         </p>
       </article>
+      <SubTitle content="학력" />
       <TimeLine />
     </section>
   );

@@ -1,4 +1,4 @@
-@value greenColor, orangeColor, darkGrayColor from "styles/colors.css";
+@value greenColor, lightOrangeColor, orangeColor, darkGrayColor from "styles/colors.css";
 
 .header {
   --first-color: white;

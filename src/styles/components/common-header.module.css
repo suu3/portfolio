@@ -12,3 +12,9 @@
     width: 100%;
   }
 }
+
+.sub-title {
+  margin-top: 10rem;
+  font-size: 6rem;
+  padding-bottom: 1rem;
+}
