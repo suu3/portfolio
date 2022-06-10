@@ -3,4 +3,7 @@
 @value errorColor: #ff6745;
 @value darkGrayColor: rgb(221, 221, 221);
 @value grayColor: rgb(243, 242, 243);
-@value lightOrangeColor: rgb(252, 185, 52);
+@value lightOrangeColor: #FE9677;
+@value darkPurple: #41436A;
+@value redPurple: #984063;
+@value hotPink: #F64668;

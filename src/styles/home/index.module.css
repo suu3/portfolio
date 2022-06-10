@@ -189,6 +189,12 @@
   opacity: 0.5;
 }
 
+.menu > div:active {
+  cursor: pointer;
+  transform: scale(0.98);
+  opacity: 0.5;
+}
+
 .menu > div:nth-child(odd) {
   grid-column-start: 1;
   grid-column-end: 2;

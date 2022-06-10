@@ -1,17 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import CommonHeader from "components/common-header";
 import styles from "styles/about/index.module.css";
 import TimeLine from "components/about/timeline";
 import SubTitle from "components/sub-title";
+import Switch from "@mui/material/Switch";
+
 const About = (props) => {
   useEffect(() => {
     AOS.init();
   });
+  const [on, setOn] = useState(false);
   return (
     <section className={styles[`about`]}>
       <CommonHeader content="About" />
+      <Switch checked={on} onChange={() => setOn(!on)} color="secondary" />
       <article className={styles[`article`]} data-aos="fade-up">
         <p>도전하고 성장하는 프론트 엔드 개발자, 변수경입니다.</p>
         <p>

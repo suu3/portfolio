@@ -3,6 +3,7 @@ import { useRoutes } from "react-router-dom";
 import LayoutContainer from "pages/layout";
 const Error = lazy(() => import("./error"));
 const About = lazy(() => import("pages/about"));
+const Skills = lazy(() => import("pages/skills"));
 const Home = lazy(() => import("pages/home"));
 const Buddy = lazy(() => import("pages/project/buddy"));
 const KnockKnock = lazy(() => import("pages/project/knockknock"));
@@ -20,6 +21,10 @@ export default function Routes() {
         {
           path: "about",
           element: <About />,
+        },
+        {
+          path: "skills",
+          element: <Skills />,
         },
         {
           path: "project",

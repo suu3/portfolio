@@ -48,7 +48,6 @@ const Home = () => {
             sequence={[3000, "Suu3"]}
             wrapper="h2"
           />
-          <GiRabbit />
         </div>
       </section>
       <section className={styles[`menu`]}>
