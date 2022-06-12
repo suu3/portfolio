@@ -75,7 +75,7 @@ const Home = () => {
           <ul className={styles[`list`]}>
             <li>Team Project</li>
             <li>Side Project</li>
-            <li>Personal Education</li>
+            <li>Personal Study</li>
           </ul>
         </div>
       </section>

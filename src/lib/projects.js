@@ -114,43 +114,37 @@ export const sideProjectList2021 =[
 
 export const personalProjectList2021 =[
     {
-        path: "/project/ToDo",
-        title: <span>삶과 일의 균형을 <br/>확인할 수 있는 투 두 리스트,<br/> "Balancing Life"</span>,
-        period: "2021/11/08 - 2021/12/17",
-        category: { backgroundColor: "rgb(192, 293, 67)", content: "Mobile"},
+        path: "/project/React-practice",
+        title: <span>React Practice</span>,
+        description: "만들고 싶은 컴포넌트를 그때그때 추가하고 있는 리액트 연습용 레포지토리입니다.",
         stack: [{
-            content: "React Native",
+            content: "ReactJS",
             backgroundColor: "#F47C7C",
-        },{
-            content: "Expo",
-            backgroundColor: "#839AA8",
-
         }]
     },
-    {
-        path: "/project/knockknock",
-        title: <span>의류 쇼핑몰 정보 분석 웹, "Rainbow"</span>,
-        period: "2021/10/02 - 2021/11/21",
-        category: { backgroundColor: "rgb(255, 154, 119)", content: "Web"},
-        stack: [{
-            content: "XAMPP",
-            backgroundColor: "#DF7861",
-        }]
-    },
+    
 ];
 
 export const personalProjectList2022 =[
     {
-        path: "/project/ToDo",
-        title: <span>삶과 일의 균형을 <br/>확인할 수 있는 투 두 리스트,<br/> "Balancing Life"</span>,
-        period: "2021/11/08 - 2021/12/17",
-        category: { backgroundColor: "rgb(192, 293, 67)", content: "Mobile"},
+        path: "/project/pirogramming",
+        title: <span>웹 프로그래밍 동아리<br/> "피로그래밍" 활동</span>,
+        description: "웹 프로그래밍 동아리 ‘피로그래밍’ 16기 활동을 하면서 진행했던 개인 과제물들 및 팀 프로젝트 과제 입니다.",
         stack: [{
-            content: "React Native",
-            backgroundColor: "#F47C7C",
+            content: "Django",
+            backgroundColor: "#1F4690",
+            color: "white"
         },{
-            content: "Expo",
-            backgroundColor: "#839AA8",
+            content: "HTML",
+            backgroundColor: "#E34F26",
+
+        },{
+            content: "CSS",
+            backgroundColor: "#1572B6",
+
+        },{
+            content: "JavaScript",
+            backgroundColor: "#ffb13b",
 
         }]
     },

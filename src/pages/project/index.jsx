@@ -123,11 +123,11 @@ const Index = (props) => {
           content="Team Project"
         />
         <article className={styles[`team`]}>
-          <div>
-            {(year === "2021" || year === "All") && <h4>- 2021</h4>}
-            <ul>
-              {(year === "2021" || year === "All") &&
-                teamProjectList2021.map((v, i) => {
+          {(year === "2021" || year === "All") && (
+            <div>
+              <h4>- 2021</h4>
+              <ul>
+                {teamProjectList2021.map((v, i) => {
                   if (!services.includes(v.category.content)) return <></>;
                   return (
                     <Card
@@ -141,13 +141,14 @@ const Index = (props) => {
                     />
                   );
                 })}
-            </ul>
-          </div>
-          <div>
-            {(year === "2022" || year === "All") && <h4>- 2022</h4>}
-            <ul>
-              {(year === "2022" || year === "All") &&
-                teamProjectList2022.map((v, i) => {
+              </ul>
+            </div>
+          )}
+          {(year === "2022" || year === "All") && (
+            <div>
+              <h4>- 2022</h4>
+              <ul>
+                {teamProjectList2022.map((v, i) => {
                   if (!services.includes(v.category.content)) return <></>;
                   return (
                     <Card
@@ -161,17 +162,18 @@ const Index = (props) => {
                     />
                   );
                 })}
-            </ul>
-          </div>
+              </ul>
+            </div>
+          )}
         </article>
         <div className="divider"></div>
         <SubTitle id="side" icon={<MdSmartToy />} content="Side Project" />
         <article className={styles[`team`]}>
-          <div>
-            {(year === "2021" || year === "All") && <h4>- 2021</h4>}
-            <ul>
-              {(year === "2021" || year === "All") &&
-                sideProjectList2021.map((v, i) => {
+          {(year === "2021" || year === "All") && (
+            <div>
+              <h4>- 2021</h4>
+              <ul>
+                {sideProjectList2021.map((v, i) => {
                   if (!services.includes(v.category.content)) return <></>;
                   return (
                     <Card
@@ -185,8 +187,9 @@ const Index = (props) => {
                     />
                   );
                 })}
-            </ul>
-          </div>
+              </ul>
+            </div>
+          )}
         </article>
         <div className="divider"></div>
         <SubTitle
@@ -195,45 +198,42 @@ const Index = (props) => {
           content="Personal Study(Project)"
         />
         <article className={styles[`personal`]}>
-          <div>
-            {(year === "2021" || year === "All") && <h4>- 2021</h4>}
-            <ul>
-              {(year === "2021" || year === "All") &&
-                personalProjectList2021.map((v, i) => {
-                  if (!services.includes(v.category.content)) return <></>;
+          {(year === "2021" || year === "All") && (
+            <div>
+              <h4>- 2021</h4>
+              <ul>
+                {personalProjectList2021.map((v, i) => {
                   return (
                     <NoImageCard
                       title={v.title}
                       key={i}
                       path={v.path}
-                      period={v.period}
-                      category={v.category}
+                      description={v.description}
                       stack={v.stack}
                     />
                   );
                 })}
-            </ul>
-          </div>
-          <div>
-            {(year === "2022" || year === "All") && <h4>- 2022</h4>}
-            <ul>
-              {(year === "2022" || year === "All") &&
-                personalProjectList2022.map((v, i) => {
-                  if (!services.includes(v.category.content)) return <></>;
+              </ul>
+            </div>
+          )}
+          {(year === "2022" || year === "All") && (
+            <div>
+              <h4>- 2022</h4>
+              <ul>
+                {personalProjectList2022.map((v, i) => {
                   return (
                     <NoImageCard
                       title={v.title}
                       key={i}
-                      imageSrc={v.imageSrc}
                       path={v.path}
-                      period={v.period}
-                      category={v.category}
+                      description={v.description}
                       stack={v.stack}
                     />
                   );
                 })}
-            </ul>
-          </div>
+              </ul>
+            </div>
+          )}
         </article>
       </section>
     </>

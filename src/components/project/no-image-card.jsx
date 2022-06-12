@@ -2,7 +2,7 @@ import React from "react";
 import styles from "styles/project/no-image-card.module.css";
 import { Link } from "react-router-dom";
 
-const NoImageCard = ({ path, title, period, category, stack }) => {
+const NoImageCard = ({ path, title, description, stack }) => {
   return (
     <Link
       data-aos="fade-up"
@@ -13,7 +13,7 @@ const NoImageCard = ({ path, title, period, category, stack }) => {
       <div className={styles[`card`]}>
         <div className={styles[`text-row`]}>
           <p className={styles[`title`]}>{title}</p>
-          <p className={styles[`period`]}>진행기간 : {period}</p>
+          <p className={styles[`description`]}>{description}</p>
           <ul className={styles[`stacks`]}>
             {stack.map((v, i) => {
               return (
