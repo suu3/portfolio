@@ -53,10 +53,21 @@ const Home = () => {
       </section>
       <section className={styles[`menu`]}>
         <div onClick={() => navigate("/about")}>
-          About<p>click me</p>
+          About
+          <ul className={styles[`list`]}>
+            <li>About</li>
+            <li>TimeLine</li>
+            <li>Contact</li>
+          </ul>
         </div>
         <div onClick={() => navigate("/skills")}>
-          Skills<p>click me</p>
+          Skills
+          {/* <p>click me</p> */}
+          <ul className={styles[`list`]}>
+            <li>Skills</li>
+            <li>Activities</li>
+            <li>Awards</li>
+          </ul>
         </div>
         <div onClick={() => navigate("/projects")}>
           Project<p>click me</p>

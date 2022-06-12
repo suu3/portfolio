@@ -11,10 +11,26 @@ const Contact = (props) => {
         <strong>E-mail</strong> ahob789@ewhain.net
       </p>
       <p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-        <strong>Github</strong> https://github.com/suu3
+        <strong>Github</strong>
+        <span
+          className={styles[`link`]}
+          onClick={() => {
+            window.location.href = "https://github.com/suu3";
+          }}
+        >
+          https://github.com/suu3
+        </span>
       </p>
       <p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-        <strong>Tech Blog</strong> https://temp-ha3.tistory.com
+        <strong>Tech Blog</strong>
+        <span
+          className={styles[`link`]}
+          onClick={() => {
+            window.location.href = "https://temp-ha3.tistory.com";
+          }}
+        >
+          https://temp-ha3.tistory.com
+        </span>
       </p>
     </article>
   );

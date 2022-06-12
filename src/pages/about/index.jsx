@@ -10,6 +10,21 @@ import SideBar from "components/layout/side-bar";
 import Contact from "components/about/contact";
 import { IMAGES } from "lib/assets";
 
+const aboutTimelines = [
+  {
+    period: "1997. 07. 15",
+    content: "",
+  },
+
+  {
+    period: "2013. 03 - 2015. 12",
+    content: "안산동산고등학교 졸업",
+  },
+  {
+    period: "2016. 03 - 2022. 08",
+    content: "이화여자대학교 컴퓨터공학과 졸업 예정",
+  },
+];
 const Explain = () => {
   return (
     <article className={styles[`article`]}>
@@ -91,7 +106,7 @@ const About = (props) => {
         />
         <Explain />
         <SubTitle id="timeline" content="Timeline" />
-        <TimeLine />
+        <TimeLine timelines={aboutTimelines} />
         <SubTitle id="contact" content="Contact" />
         <Contact />
       </section>

@@ -77,7 +77,14 @@
 .contact p:last-child strong {
   background-color: hotPink;
 }
-
+.link {
+  margin-left: 0.5rem;
+  transition: color 0.2s ease-in-out;
+}
+.link:hover {
+  cursor: pointer;
+  color: redPurple;
+}
 .switch {
   position: absolute;
   bottom: 2rem;

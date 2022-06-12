@@ -20,6 +20,7 @@
 }
 
 .text {
+  padding-top: 2.6rem;
   padding-left: 8%;
   width: 60%;
   display: flex;
@@ -179,6 +180,15 @@
   transition: all 0.2s ease-in-out;
 }
 
+.list {
+  padding-top: 1rem;
+}
+.list li {
+  font-size: 2rem;
+  font-family: "NEXON Lv1 Gothic OTF";
+  padding: 0.5rem;
+  text-align: center;
+}
 .menu > div > p {
   font-size: 2rem;
   padding-top: 1rem;
@@ -223,6 +233,7 @@
 @media screen and (max-width: 1200px) {
   .home {
     flex-direction: column;
+    overflow: auto;
   }
   .text {
     width: 100%;

@@ -1,0 +1,64 @@
+@value greenColor, redPurple, darkGrayColor, errorColor, orangeColor from "styles/colors.css";
+
+.skills h3 {
+  font-size: 3rem;
+  font-family: "NEXON Lv1 Gothic OTF";
+  font-weight: 600;
+  margin: 3rem 0;
+  display: flex;
+  align-items: center;
+}
+.skills .grid div:first-child > h3 > svg {
+  font-size: 3.5rem;
+}
+.skills h3 svg {
+  margin-right: 1rem;
+}
+
+.tech img {
+  margin-right: 0.5rem;
+}
+
+.score li {
+  font-family: "NEXON Lv1 Gothic OTF LIGHT";
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+.score li strong {
+  font-family: "NEXON Lv1 Gothic OTF";
+  font-weight: 800;
+  display: inline-block;
+  width: 10rem;
+  color: redPurple;
+}
+
+.grid {
+  display: grid;
+  gap: 10%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.activity {
+  font-family: "NEXON Lv1 Gothic OTF";
+  font-size: 1.6rem;
+}
+
+.description {
+  font-family: "NEXON Lv1 Gothic OTF LIGHT";
+  padding: 1rem 0 2rem 2rem;
+  font-size: 1.6rem;
+}
+.activity li {
+  padding: 1rem 0;
+}
+.activity li strong {
+  display: inline-block;
+  font-weight: 600;
+  color: redPurple;
+  width: 20rem;
+}
+@media screen and (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -8,6 +8,7 @@
   position: relative;
   animation: border-100 1.5s linear forwards;
 }
+
 @keyframes border-100 {
   0% {
   }
@@ -20,4 +21,6 @@
   margin-top: 10rem;
   font-size: 5rem;
   padding-bottom: 1rem;
+  display: flex;
+  align-items: baseline;
 }

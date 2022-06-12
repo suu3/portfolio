@@ -13,8 +13,8 @@ const SideBar = ({ obj }) => {
       <ul>
         {obj.map((v, i) => {
           return (
-            <Link scroll={(el) => scrollWidthOffset(el)} to={v.path}>
-              <li key={i}>{v.content}</li>
+            <Link key={i} scroll={(el) => scrollWidthOffset(el)} to={v.path}>
+              <li>{v.content}</li>
             </Link>
           );
         })}
