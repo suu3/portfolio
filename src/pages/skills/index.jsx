@@ -8,7 +8,7 @@ import SubTitle from "components/sub-title";
 import { BsFillPencilFill } from "react-icons/bs";
 import { MdComputer } from "react-icons/md";
 import TimeLine from "components/about/timeline";
-import { activityTimelines } from "lib/timelines";
+import { activityTimelines, awardsTimelines } from "lib/timelines";
 
 const SkillsSide = [
   {
@@ -139,7 +139,7 @@ const Skills = (props) => {
         </article>
         <article>
           <SubTitle content="Awards" id="awards" />
-          <TimeLine timelines={activityTimelines} />
+          <TimeLine timelines={awardsTimelines} />
         </article>
       </section>
     </>

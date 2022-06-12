@@ -119,7 +119,7 @@ export const activityTimelines = [
             <br />
             <br />
             <span>
-              동아리 '피로그래밍'에서 진행한{" "}
+              동아리 '피로그래밍'에서 진행한
               <strong style={{ fontWeight: 700 }}>'Knock/Knock'</strong>라는
               프로젝트를 Django에서 React & NodeJS로 스택 전환하는 것을 목표로
               참가했습니다.
@@ -128,4 +128,86 @@ export const activityTimelines = [
         );
       },
     },
+  ];
+
+
+
+  export const awardsTimelines = [
+    {
+      period: "2021 .11 .25",
+      content: "2021-2 졸업 프로젝트 대상",
+      detail: () => {
+        return (
+          <div className={styles[`modal-detail`]}>
+            <p>
+              <strong>
+                <AiFillGithub />
+                관련 Github
+              </strong>
+              <span
+                className={styles[`link`]}
+                onClick={() => {
+                  window.location.href =
+                    "https://github.com/School-is-hard/Chatbot_Buddy";
+                }}
+              >
+                https://github.com/School-is-hard/Chatbot_Buddy
+              </span>
+            </p>
+            <span>
+              2021-2 이화여자대학교 졸업프로젝트에서 딥러닝 기반 심리안정 챗봇 스피커 "Buddy" 프로젝트로 <strong style={{ fontWeight: 700 }}>대상</strong>을 수상했습니다.
+            </span>
+          </div>
+        );
+      },
+    },
+    {
+      period: "2021. 09. 14",
+      content: "경상북도 데이터 경진대회 제품 및 서비스 개발 부문 우수상",
+      detail: () => {
+        return (
+          <div className={styles[`modal-detail`]}>
+            <p style={{marginBottom: "1rem"}}>
+            <strong>
+                <AiFillGithub />
+                관련 Github
+              </strong>
+              <span
+                className={styles[`link`]}
+                onClick={() => {
+                  window.location.href = "https://github.com/suu3/Gymt";
+                }}
+              >
+                https://github.com/suu3/Gymt
+              </span>
+            </p>
+            <p >
+              <strong
+                style={{
+                  "--background-color": styles[`redPurple`],
+                  "--color": "white",
+                  
+                }}
+              >
+                <AiTwotoneHome />
+                관련 Site
+              </strong>
+              <span
+                className={styles[`link`]}
+                onClick={() => {
+                  window.location.href = "http://www.gbdcon.kr";
+                }}
+              >
+                http://www.gbdcon.kr
+              </span>
+            </p>
+            <span>
+              공공 체육 시설 정보 제공 플랫폼 "GYMT"로 <strong style={{ fontWeight: 700 }}>우수상</strong>을 수상했습니다.
+            </span>
+            
+          </div>
+        );
+      },
+    },
+
   ];
