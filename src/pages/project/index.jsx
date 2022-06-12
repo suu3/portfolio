@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "styles/project/index.module.css";
 import SideBar from "components/layout/side-bar";
 import SubTitle from "components/sub-title";
@@ -8,7 +8,8 @@ import { BsFillPeopleFill, BsFillPersonFill } from "react-icons/bs";
 import { MdSmartToy } from "react-icons/md";
 import Card from "components/project/card";
 import MultiHashTag from "components/multi-hash-tag";
-import { teamProjectList2021 } from "lib/projects";
+import { teamProjectList2021, teamProjectList2022 } from "lib/projects";
+import AOS from "aos";
 
 const projectSide = [
   {
@@ -32,6 +33,9 @@ const projectSide = [
 const Index = (props) => {
   const [year, setYear] = useState("All");
   const [services, setServices] = useState(["Deep Learning", "Web", "Mobile"]);
+  useEffect(() => {
+    AOS.init();
+  });
   return (
     <>
       <SideBar obj={projectSide} />
@@ -114,24 +118,43 @@ const Index = (props) => {
         <article className={styles[`team`]}>
           <div>
             {(year === "2021" || year === "All") && <h4>- 2021</h4>}
-            {(year === "2021" || year === "All") &&
-              teamProjectList2021.map((v, i) => {
-                if (!services.includes(v.category)) return <></>;
-                return (
-                  <Card
-                    title={v.title}
-                    key={i}
-                    imageSrc={v.imageSrc}
-                    path={v.path}
-                    period={v.period}
-                    category={v.category}
-                    stack={v.stack}
-                  />
-                );
-              })}
+            <ul>
+              {(year === "2021" || year === "All") &&
+                teamProjectList2021.map((v, i) => {
+                  if (!services.includes(v.category.content)) return <></>;
+                  return (
+                    <Card
+                      title={v.title}
+                      key={i}
+                      imageSrc={v.imageSrc}
+                      path={v.path}
+                      period={v.period}
+                      category={v.category}
+                      stack={v.stack}
+                    />
+                  );
+                })}
+            </ul>
           </div>
           <div>
-            <h4>- 2022</h4>
+            {(year === "2022" || year === "All") && <h4>- 2022</h4>}
+            <ul>
+              {(year === "2022" || year === "All") &&
+                teamProjectList2022.map((v, i) => {
+                  if (!services.includes(v.category.content)) return <></>;
+                  return (
+                    <Card
+                      title={v.title}
+                      key={i}
+                      imageSrc={v.imageSrc}
+                      path={v.path}
+                      period={v.period}
+                      category={v.category}
+                      stack={v.stack}
+                    />
+                  );
+                })}
+            </ul>
           </div>
         </article>
         <div className="divider"></div>

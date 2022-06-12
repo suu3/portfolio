@@ -18,3 +18,8 @@
 .team > div {
   padding-bottom: 3rem;
 }
+
+.team > div > ul {
+  display: flex;
+  gap: 2rem;
+}
