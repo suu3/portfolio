@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useState } from "react";
+import React, { memo, useEffect, useCallback, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import styles from "styles/layout/header.module.css";
 import { IMAGES } from "lib/assets";
@@ -8,38 +8,56 @@ import { useDispatch } from "react-redux";
 import { changeSecondColor } from "redux/color";
 import { useSelector } from "react-redux";
 
+const Rocket = memo(() => {
+  return (
+    <div className={styles[`profile-rocket`]}>
+      <FaRocket />
+    </div>
+  );
+});
 const Header = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const dispatch = useDispatch();
-  const { value } = useSelector((state) => state.color);
+  // const dispatch = useDispatch();
+  // const { value } = useSelector((state) => state.color);
+  // useEffect(() => {
+  //   if (location.pathname === "/about") {
+  //     console.log("/about");
+  //     // dispatch(changeFirstColor(value.secondColor));
+  //     dispatch(changeSecondColor(styles[`orangeColor`]));
+  //   } else if (location.pathname === "/skills") {
+  //     console.log("/skills");
+  //     // dispatch(changeFirstColor(value.secondColor));
+  //     dispatch(changeSecondColor("#2A2550"));
+  //   } else {
+  //     console.log("/etc");
+  //     // dispatch(changeFirstColor(value.secondColor));
+  //     dispatch(changeSecondColor("#A5BECC"));
+  //   }
+  // }, [dispatch, location.pathname]);
+  const [color, setColor] = useState(styles[`orangeColor`]);
+
   useEffect(() => {
     if (location.pathname === "/about") {
       console.log("/about");
-      // dispatch(changeFirstColor(value.secondColor));
-      dispatch(changeSecondColor(styles[`orangeColor`]));
+      setColor(styles[`orangeColor`]);
     } else if (location.pathname === "/skills") {
       console.log("/skills");
-      // dispatch(changeFirstColor(value.secondColor));
-      dispatch(changeSecondColor("#2A2550"));
+      setColor("#2A2550");
     } else {
       console.log("/etc");
-      // dispatch(changeFirstColor(value.secondColor));
-      dispatch(changeSecondColor("#A5BECC"));
+      setColor("#A5BECC");
     }
-  }, [dispatch, location.pathname]);
+  }, [location.pathname]);
   return (
     <header
       className={`${styles[`header`]}`}
       style={{
-        // "--first-color": value.firstColor,
-        "--last-color": value.secondColor,
+        "--last-color": color,
       }}
     >
       <div className={styles[`profile`]}>
-        <div className={styles[`profile-rocket`]}>
-          <FaRocket />
-        </div>
+        <Rocket />
         <img onClick={() => navigate("/")} src={IMAGES.PROFILE} alt="home" />
       </div>
       <nav>

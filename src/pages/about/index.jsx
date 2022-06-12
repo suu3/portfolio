@@ -65,6 +65,16 @@ const AboutSide = [
   },
 ];
 
+const Item = ({ on, setOn }) => {
+  return (
+    <div className={styles[`switch`]}>
+      <span>개발자 변수경</span>
+      <Switch checked={on} onChange={() => setOn(!on)} color="secondary" />
+      <span>사람 변수경</span>
+    </div>
+  );
+};
+
 const About = (props) => {
   useEffect(() => {
     AOS.init();
@@ -74,8 +84,11 @@ const About = (props) => {
     <>
       <SideBar obj={AboutSide} />
       <section className={`${styles[`about`]} section`}>
-        <CommonHeader id="about" content="About" />
-        {/* <Switch checked={on} onChange={() => setOn(!on)} color="secondary" /> */}
+        <CommonHeader
+          id="about"
+          content="About"
+          // item={<Item on={on} setOn={setOn} />}
+        />
         <Explain />
         <SubTitle id="timeline" content="Timeline" />
         <TimeLine />

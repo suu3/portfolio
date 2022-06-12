@@ -3,6 +3,9 @@
   padding-bottom: 1rem;
   width: 0;
   border-bottom: 1px solid gray;
+  display: flex;
+  align-items: baseline;
+  position: relative;
   animation: border-100 1.5s linear forwards;
 }
 @keyframes border-100 {

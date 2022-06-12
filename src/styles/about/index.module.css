@@ -78,6 +78,27 @@
   background-color: hotPink;
 }
 
+.switch {
+  position: absolute;
+  bottom: 2rem;
+  left: 28rem;
+  font-family: "NEXON Lv1 Gothic OTF";
+  animation: fadeIn 2s ease-in-out forwards;
+  font-size: 1.7rem;
+  visibility: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: inline-block;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .contact {
     grid-template-columns: 1fr;
