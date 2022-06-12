@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/614.968c05c5.chunk.js","mappings":"yIAMA,UAJmB,SAACA,GAClB,OAAO","sources":["pages/project/knockknock.jsx"],"sourcesContent":["import React from \"react\";\r\n\r\nconst KnockKnock = (props) => {\r\n  return <div>KnockKnock</div>;\r\n};\r\n\r\nexport default KnockKnock;\r\n"],"names":["props"],"sourceRoot":""}
