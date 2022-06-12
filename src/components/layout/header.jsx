@@ -5,7 +5,7 @@ import { IMAGES } from "lib/assets";
 import { FaRocket } from "react-icons/fa";
 import IconRow from "./icon-row";
 import { useDispatch } from "react-redux";
-import { changeFirstColor, changeSecondColor } from "redux/color";
+import { changeSecondColor } from "redux/color";
 import { useSelector } from "react-redux";
 
 const Header = () => {
@@ -15,16 +15,19 @@ const Header = () => {
   const { value } = useSelector((state) => state.color);
   useEffect(() => {
     if (location.pathname === "/about") {
+      console.log("/about");
       // dispatch(changeFirstColor(value.secondColor));
       dispatch(changeSecondColor(styles[`orangeColor`]));
     } else if (location.pathname === "/skills") {
+      console.log("/skills");
       // dispatch(changeFirstColor(value.secondColor));
       dispatch(changeSecondColor("#2A2550"));
     } else {
+      console.log("/etc");
       // dispatch(changeFirstColor(value.secondColor));
       dispatch(changeSecondColor("#A5BECC"));
     }
-  }, [dispatch, location.pathname, value.secondColor]);
+  }, [dispatch, location.pathname]);
   return (
     <header
       className={`${styles[`header`]}`}

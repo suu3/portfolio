@@ -21,7 +21,7 @@ const Home = () => {
         <span>O</span>
       </header>
       {/* <IoIosStar className={styles[`star`]} /> */}
-      <IoIosRocket className={styles[`rocket`]} />
+      {/* <IoIosRocket className={styles[`rocket`]} /> */}
       {/* <IoIosMoon className={styles[`moon`]} /> */}
       <section className={styles[`text`]}>
         <div className={styles[`first`]}>

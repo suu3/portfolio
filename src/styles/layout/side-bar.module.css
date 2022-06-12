@@ -2,7 +2,7 @@
   position: fixed;
   right: 50px;
   font-size: 16px;
-  top: 50%;
+  top: 40%;
   width: 150px;
   transform: translate(0, -50%);
   padding: 10px 30px;
@@ -12,4 +12,10 @@
 
 .side li {
   padding: 1rem 0;
+}
+
+@media screen and (max-width: 800px) {
+  .side {
+    display: none;
+  }
 }

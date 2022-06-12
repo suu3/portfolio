@@ -1,11 +1,43 @@
 @value greenColor,darkPurple, lightOrangeColor, hotPink, redPurple, orangeColor, darkGrayColor from "styles/colors.css";
 
 .article {
+  /* margin-top: 10rem; */
   font-size: 1.6rem;
   font-family: "NEXON Lv1 Gothic OTF Light";
   line-height: 3rem;
 }
 
+.emoji {
+  position: absolute;
+  z-index: -1;
+  top: -20rem;
+  right: 30%;
+  display: inline-block;
+  width: 20rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.hash-row {
+  margin-top: 1rem;
+}
+.hash {
+  border: 2px solid black;
+  background-color: greenColor;
+  font-family: "NEXON Lv1 Gothic OTF";
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  border-radius: 2rem;
+}
+.hash:last-child {
+  background-color: hotPink;
+  margin-left: 0.5rem;
+}
+.emoji img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.1);
+}
 .article > p {
   margin: 2rem 0;
 }
@@ -44,4 +76,10 @@
 }
 .contact p:last-child strong {
   background-color: hotPink;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact {
+    grid-template-columns: 1fr;
+  }
 }

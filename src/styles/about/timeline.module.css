@@ -1,0 +1,30 @@
+@value darkGrayColor, greenColor,darkPurple, lightOrangeColor, hotPink, redPurple, orangeColor from "styles/colors.css";
+.article {
+  margin-top: 5rem;
+  margin-left: 5%;
+  font-family: "NEXON Lv1 Gothic OTF";
+}
+.time {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+.time strong {
+  display: inline-block;
+  font-weight: 600;
+  width: 17rem;
+}
+.bar {
+  width: 0.2rem;
+  transform: translateX(200%) scaleY(1.2);
+  background-color: darkPurple;
+  height: 5rem;
+}
+.circle {
+  margin-right: 1rem;
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  background-color: darkPurple;
+  border-radius: 50%;
+}

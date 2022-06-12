@@ -1,91 +1,45 @@
 import * as React from "react";
-import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
-import DriveFileRenameOutlineIcon from "@mui/icons-material/DriveFileRenameOutline";
-import TimelineDot from "@mui/lab/TimelineDot";
-import CakeIcon from "@mui/icons-material/Cake";
-import LaptopMacIcon from "@mui/icons-material/LaptopMac";
-import SchoolIcon from "@mui/icons-material/School";
-import Typography from "@mui/material/Typography";
+import styles from "styles/about/timeline.module.css";
 
 export default function TimeLine() {
   return (
-    <Timeline position="alternate">
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot>
-            <CakeIcon />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent data-aos="fade-left" sx={{ py: "12px", px: 2 }}>
-          <Typography variant="h5" component="span">
-            1997. 07 .15
-          </Typography>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot color="primary">
-            <DriveFileRenameOutlineIcon />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent data-aos="fade-right" sx={{ py: "12px", px: 2 }}>
-          <Typography variant="h5" component="span">
-            2013. 03
-          </Typography>
-          <Typography>안산 동산고 입학</Typography>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot color="primary">
-            <DriveFileRenameOutlineIcon />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent data-aos="fade-right" sx={{ py: "12px", px: 2 }}>
-          <Typography variant="h5" component="span">
-            2013. 03
-          </Typography>
-          <Typography>안산 동산고 졸업</Typography>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot color="primary" variant="outlined">
-            <SchoolIcon />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent data-aos="fade-left" sx={{ py: "12px", px: 2 }}>
-          <Typography variant="h5" component="span">
-            2016. 03
-          </Typography>
-          <Typography>이화여자대학교 입학</Typography>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot color="primary" variant="outlined">
-            <SchoolIcon />
-          </TimelineDot>
-        </TimelineSeparator>
-        <TimelineContent data-aos="fade-left" sx={{ py: "12px", px: 2 }}>
-          <Typography variant="h5" component="span">
-            2022. 08
-          </Typography>
-          <Typography>이화여자대학교 졸업</Typography>
-        </TimelineContent>
-      </TimelineItem>
-    </Timeline>
+    <article className={styles[`article`]}>
+      <div className={styles[`time`]}>
+        <div className={styles[`circle`]}></div>
+        <span
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          <strong>1997. 07. 15</strong>
+        </span>
+      </div>
+      <div className={styles[`time`]}>
+        <div className={styles[`bar`]}></div>
+      </div>
+      <div className={styles[`time`]}>
+        <div className={styles[`circle`]}></div>
+        <span
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          <strong>2013. 03 - 2015. 12</strong> 안산동산고등학교
+        </span>
+      </div>
+      <div className={styles[`time`]}>
+        <div className={styles[`bar`]}></div>
+      </div>
+      <div className={styles[`time`]}>
+        <div className={styles[`circle`]}></div>
+        <span
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          <strong>2016. 03 - 2022. 08</strong> 이화여자대학교 컴퓨터공학과
+        </span>
+      </div>
+    </article>
   );
 }

@@ -10,6 +10,7 @@ export const IMAGES = {
     NOT_FOUND: getImagesPath('not_found.svg'),
     PROFILE: getImagesPath('333.png'),
     UNIVERSE: getImagesPath('stars.png'),
+    EMOJI: getImagesPath('emoji.png'),
 }
 
 export const ICONS = {

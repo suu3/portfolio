@@ -61,6 +61,13 @@ a {
 }
 
 .section {
+  min-width: 50rem;
   padding: 10% calc(4% + 200px) 10% 4%;
   background-color: rgb(221, 221, 221);
+}
+
+@media screen and (max-width: 800px) {
+  .section {
+    padding: 10% 4%;
+  }
 }
