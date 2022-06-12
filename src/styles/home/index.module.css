@@ -1,6 +1,7 @@
 @value greenColor, redPurple, darkGrayColor, errorColor, orangeColor from "styles/colors.css";
 
 .home {
+  background-color: white;
   height: 100vh;
   overflow: hidden;
   width: 100%;

@@ -2,17 +2,29 @@ import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import CommonHeader from "components/common-header";
+import SideBar from "components/layout/side-bar";
+import styles from "styles/skills/index.module.css";
 
-const About = (props) => {
+const SkillsSide = [
+  {
+    path: "/skills#skills",
+    content: "Skills",
+  },
+];
+
+const Skills = (props) => {
   useEffect(() => {
     AOS.init();
   });
   return (
-    <section>
-      <CommonHeader content="Skills" />
-      <div>Skills</div>
-    </section>
+    <>
+      <SideBar obj={SkillsSide} />
+      <section className={`${styles[`skills`]} section`}>
+        <CommonHeader content="Skills" id="skills" />
+        <div>Skills</div>
+      </section>
+    </>
   );
 };
 
-export default About;
+export default Skills;

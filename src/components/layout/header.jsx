@@ -43,7 +43,7 @@ const Header = () => {
       setColor(styles[`orangeColor`]);
     } else if (location.pathname === "/skills") {
       console.log("/skills");
-      setColor("#2A2550");
+      setColor(styles[`redPurple`]);
     } else {
       console.log("/etc");
       setColor("#A5BECC");
