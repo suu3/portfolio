@@ -46,6 +46,7 @@
 .description {
   font-family: "NEXON Lv1 Gothic OTF LIGHT";
   padding: 1rem 0 2rem 2rem;
+  transform: translateY(20%);
   font-size: 1.6rem;
 }
 .activity li {

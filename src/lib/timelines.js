@@ -155,6 +155,15 @@ export const activityTimelines = [
               </span>
             </p>
             <span>
+            <strong style={{ fontWeight: 700 }}>팀명: 학교다니기힘드시조</strong>
+            </span>
+            <br/>
+            <span>
+            <strong style={{ fontWeight: 700 }}>팀원 수: 3명</strong>
+            </span>
+            <br/>
+            <br/>
+            <span>
               2021-2 이화여자대학교 졸업프로젝트에서 딥러닝 기반 심리안정 챗봇 스피커 "Buddy" 프로젝트로 <strong style={{ fontWeight: 700 }}>대상</strong>을 수상했습니다.
             </span>
           </div>
@@ -202,7 +211,17 @@ export const activityTimelines = [
               </span>
             </p>
             <span>
-              공공 체육 시설 정보 제공 플랫폼 "GYMT"로 <strong style={{ fontWeight: 700 }}>우수상</strong>을 수상했습니다.
+            <strong style={{ fontWeight: 700 }}>팀명: 짐트레이너</strong>
+            </span>
+            <br/>
+            <span>
+            <strong style={{ fontWeight: 700 }}>팀원 수: 3명</strong>
+            </span>
+            <br/>
+            <br/>
+
+            <span>
+              공공 체육 시설 정보 제공 플랫폼 "GYMT" 프로젝트로 <strong style={{ fontWeight: 700 }}>우수상</strong>을 수상했습니다.
             </span>
             
           </div>

@@ -1,0 +1,87 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 10%;
+  font-size: 1.6rem;
+  width: 30rem;
+  height: auto;
+  background-color: rgb(255, 219, 215);
+  font-family: "NEXON Lv1 Gothic OTF";
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in-out;
+}
+.card:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transform: translateY(-10%);
+}
+.card > div {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  border-radius: 10%;
+}
+
+.card > div img {
+  width: 100%;
+  border-top-left-radius: 12%;
+  border-top-right-radius: 12%;
+  height: 100%;
+  background-color: white;
+  border-bottom: 2px solid gray;
+  object-fit: cover;
+}
+
+.category {
+  --background-color: skyBlue;
+  --color: black;
+  display: inline-block;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.6rem;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  margin-right: 0.5rem;
+  border: 2px solid black;
+  background-color: var(--background-color);
+  color: var(--color);
+}
+
+.text-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.title {
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.stacks {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.stacks li {
+  --background-color: skyBlue;
+  --color: black;
+  display: inline-block;
+  bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+  border: 2px solid black;
+  background-color: var(--background-color);
+  color: var(--color);
+}

@@ -1,0 +1,20 @@
+@value greenColor,darkPurple, lightOrangeColor, hotPink, redPurple, orangeColor, darkGrayColor, skyBlue from "styles/colors.css";
+
+.category h3 {
+  font-size: 3rem;
+  font-family: "NEXON Lv1 Gothic OTF";
+  font-weight: 600;
+  display: flex;
+  margin: 2rem 0;
+  align-items: center;
+}
+.team h4,
+.category h4 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  font-family: "NEXON Lv1 Gothic OTF";
+}
+
+.team > div {
+  padding-bottom: 3rem;
+}

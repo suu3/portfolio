@@ -7,6 +7,7 @@ import IconRow from "./icon-row";
 import { useDispatch } from "react-redux";
 import { changeSecondColor } from "redux/color";
 import { useSelector } from "react-redux";
+import { projectList } from "lib/projects";
 
 const Rocket = memo(() => {
   return (
@@ -39,13 +40,13 @@ const Header = () => {
 
   useEffect(() => {
     if (location.pathname === "/about") {
-      console.log("/about");
+      // console.log("/about");
       setColor(styles[`orangeColor`]);
     } else if (location.pathname === "/skills") {
-      console.log("/skills");
+      // console.log("/skills");
       setColor(styles[`redPurple`]);
     } else {
-      console.log("/etc");
+      // console.log("/etc");
       setColor(styles[`skyBlue`]);
     }
   }, [location.pathname]);
@@ -90,7 +91,7 @@ const Header = () => {
           <li onClick={() => navigate("/project")}>
             <span
               style={
-                location.pathname === "/project"
+                location.pathname.startsWith("/project")
                   ? { color: styles[`greenColor`] }
                   : { color: "black" }
               }

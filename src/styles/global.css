@@ -46,7 +46,9 @@ li {
 a {
   text-decoration: none !important;
 }
-
+.divider {
+  border-bottom: 1px solid gray;
+}
 .layout {
   margin-left: max(20rem, min(30rem, 30%));
 }
