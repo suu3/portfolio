@@ -4,8 +4,7 @@
   height: 100vh;
   overflow: hidden;
   width: 100%;
-  background: linear-gradient(to bottom, #ffffff, #ffffff, #fff7e0);
-
+  /* background: linear-gradient(to bottom, #ffffff, #ffffff, #fff7e0); */
   display: flex;
 }
 
@@ -28,6 +27,13 @@
   position: relative;
 }
 
+.text p {
+  font-size: 2rem;
+  color: rgb(114, 114, 114);
+  font-weight: 800;
+  line-height: 10rem;
+  font-family: "NEXON Lv1 Gothic OTF Light";
+}
 .menu {
   width: 40%;
 }
@@ -93,7 +99,7 @@
   left: 4%;
   font-size: 10rem;
   color: indigo;
-  /* animation: floating 10s linear infinite; */
+  animation: floating 10s linear infinite;
 }
 
 .star {
@@ -123,7 +129,7 @@
     transform: translate(25%, 20%);
   }
   50% {
-    transform: translate(50%, -15%);
+    transform: translate(70%, -15%);
   }
   75% {
     transform: translate(10%, -30%);
@@ -191,7 +197,7 @@
 
 .menu > div:active {
   cursor: pointer;
-  transform: scale(0.98);
+  transform: scale(0.9);
   opacity: 0.5;
 }
 

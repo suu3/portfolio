@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter basename="/portfolio">
       <Suspense fallback={null}>
         <Provider store={store}>
-          <Routes />{" "}
+          <Routes />
         </Provider>
       </Suspense>
     </BrowserRouter>

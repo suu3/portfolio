@@ -41,7 +41,7 @@ const Header = () => {
       </div>
       <nav>
         <ul className={styles[`nav`]}>
-          <h1>SUU3</h1>
+          <h1 style={{ zIndex: 1 }}>SUU3</h1>
           <li onClick={() => navigate("/about")}>
             <span
               style={

@@ -3,7 +3,6 @@
 .icon-row {
   position: fixed;
   bottom: 10%;
-  font-size: 4rem;
 }
 
 .icon-row > ul {
@@ -12,8 +11,12 @@
 }
 
 .icon-row > ul > li {
-  margin: 1rem;
+  font-size: 4rem;
+  margin: auto 1rem;
   transition: all 0.2s ease-in-out;
+}
+.icon-row > ul > li:nth-child(2) {
+  font-size: 3rem;
 }
 
 .icon-row > ul > li:hover {

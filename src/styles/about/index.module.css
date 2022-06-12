@@ -1,9 +1,4 @@
-@value greenColor, orangeColor, darkGrayColor from "styles/colors.css";
-
-.about {
-  padding: 10% 4%;
-  background-color: darkGrayColor;
-}
+@value greenColor,darkPurple, lightOrangeColor, hotPink, redPurple, orangeColor, darkGrayColor from "styles/colors.css";
 
 .article {
   font-size: 1.6rem;
@@ -13,4 +8,40 @@
 
 .article > p {
   margin: 2rem 0;
+}
+
+.article strong {
+  font-weight: 900;
+}
+
+.contact {
+  font-size: 1.6rem;
+  display: grid;
+  margin: 2rem 0;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  font-family: "NEXON Lv1 Gothic OTF";
+  line-height: 3rem;
+}
+
+.contact strong {
+  font-weight: 600;
+  background-color: lightOrangeColor;
+  padding: 0.2rem 0 0 0;
+  border-radius: 1rem;
+  display: inline-block;
+  width: 10rem;
+  text-align: center;
+  margin-right: 1rem;
+}
+
+.contact p:first-child strong {
+  background-color: lightcoral;
+}
+
+.contact p:nth-child(2) strong {
+  background-color: redPurple;
+}
+.contact p:last-child strong {
+  background-color: hotPink;
 }

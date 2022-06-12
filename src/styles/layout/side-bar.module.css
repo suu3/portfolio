@@ -1,0 +1,15 @@
+.side {
+  position: fixed;
+  right: 50px;
+  font-size: 16px;
+  top: 50%;
+  width: 150px;
+  transform: translate(0, -50%);
+  padding: 10px 30px;
+  border-left: 1px dotted black;
+  font-family: "NEXON Lv1 Gothic OTF";
+}
+
+.side li {
+  padding: 1rem 0;
+}

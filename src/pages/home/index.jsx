@@ -20,9 +20,9 @@ const Home = () => {
         <span>I</span>
         <span>O</span>
       </header>
-      <IoIosStar className={styles[`star`]} />
+      {/* <IoIosStar className={styles[`star`]} /> */}
       <IoIosRocket className={styles[`rocket`]} />
-      <IoIosMoon className={styles[`moon`]} />
+      {/* <IoIosMoon className={styles[`moon`]} /> */}
       <section className={styles[`text`]}>
         <div className={styles[`first`]}>
           <TypeAnimation cursor={false} sequence={["Hello,"]} wrapper="h2" />
@@ -49,6 +49,7 @@ const Home = () => {
             wrapper="h2"
           />
         </div>
+        <p>프론트 엔드 개발자 변수경의 포트폴리오입니다.</p>
       </section>
       <section className={styles[`menu`]}>
         <div onClick={() => navigate("/about")}>
