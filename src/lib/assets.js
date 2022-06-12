@@ -17,6 +17,8 @@ export const IMAGES = {
     PAWS: getImagesPath('Paws.png'),
     TODO: getImagesPath('ToDo.png'),
     RAINBOW: getImagesPath('Rainbow.png'),
+    MOVIE: getImagesPath('movie.png'),
+
 }
 
 export const ICONS = {

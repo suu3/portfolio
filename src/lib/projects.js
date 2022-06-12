@@ -85,7 +85,7 @@ export const teamProjectList2022 =[
 
 export const sideProjectList2021 =[
     {
-        path: "/project/ToDo",
+        path: "/project/To-do",
         imageSrc: IMAGES.TODO,
         title: <span>삶과 일의 균형을 <br/>확인할 수 있는 투 두 리스트,<br/> "Balancing Life"</span>,
         period: "2021/11/08 - 2021/12/17",
@@ -100,7 +100,7 @@ export const sideProjectList2021 =[
         }]
     },
     {
-        path: "/project/knockknock",
+        path: "/project/rainbow",
         imageSrc: IMAGES.RAINBOW,
         title: <span>의류 쇼핑몰 정보 분석 웹, "Rainbow"</span>,
         period: "2021/10/02 - 2021/11/21",
@@ -108,6 +108,21 @@ export const sideProjectList2021 =[
         stack: [{
             content: "XAMPP",
             backgroundColor: "#DF7861",
+        }]
+    },
+    {
+        path: "/project/movie",
+        imageSrc: IMAGES.MOVIE,
+        title: <span>영화 사이트 WEB <br/>(개인 side project)</span>,
+        period: "2022/04/12 - 2022/04/13",
+        category: { backgroundColor: "rgb(255, 154, 119)", content: "Web"},
+        stack: [{
+            content: "React",
+            backgroundColor: "#F47C7C",
+        },{
+            content: "TypeScript",
+            backgroundColor: "#34B3F1",
+
         }]
     },
 ];
