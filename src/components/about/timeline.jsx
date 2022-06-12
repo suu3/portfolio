@@ -43,36 +43,9 @@ export default function TimeLine({ timelines }) {
                 data-aos-duration="1000"
                 data-aos-once="true"
               >
-                <strong>{v.period}</strong> {v.content}
-                {v.detail && (
-                  <button
-                    onClick={() => {
-                      setModalShow(true);
-                      setTitle(v.content);
-                      setDetail(v.detail);
-                    }}
-                    className={styles[`detail`]}
-                  >
-                    DETAIL <AiOutlineCaretRight />
-                  </button>
-                )}
-              </span>
-            </div>
-          );
-        } else {
-          return (
-            <li key={i}>
-              <div className={styles[`time`]}>
-                <div className={styles[`bar`]}></div>
-              </div>
-              <div className={styles[`time`]}>
-                <div className={styles[`circle`]}></div>
-                <span
-                  data-aos="fade-left"
-                  data-aos-duration="1000"
-                  data-aos-once="true"
-                >
-                  <strong>{v.period}</strong> {v.content}
+                <strong>{v.period}</strong>{" "}
+                <span className={styles[`time-content`]}>
+                  <span>{v.content}</span>
                   {v.detail && (
                     <button
                       onClick={() => {
@@ -85,6 +58,41 @@ export default function TimeLine({ timelines }) {
                       DETAIL <AiOutlineCaretRight />
                     </button>
                   )}
+                </span>
+              </span>
+            </div>
+          );
+        } else {
+          return (
+            <li key={i}>
+              <div className={styles[`time`]}>
+                <div className={styles[`bar`]}></div>
+              </div>
+              <div className={styles[`time`]}>
+                <div className={styles[`circle`]}>
+                  <div className={styles[`inner-circle`]}></div>
+                </div>
+                <span
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                >
+                  <strong>{v.period}</strong>
+                  <span className={styles[`time-content`]}>
+                    <span>{v.content}</span>
+                    {v.detail && (
+                      <button
+                        onClick={() => {
+                          setModalShow(true);
+                          setTitle(v.content);
+                          setDetail(v.detail);
+                        }}
+                        className={styles[`detail`]}
+                      >
+                        DETAIL <AiOutlineCaretRight />
+                      </button>
+                    )}
+                  </span>
                 </span>
               </div>
             </li>

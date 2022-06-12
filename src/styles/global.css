@@ -69,6 +69,6 @@ a {
 
 @media screen and (max-width: 800px) {
   .section {
-    padding: 10% 4%;
+    padding: max(10%, 2rem) max(4%, 2rem);
   }
 }

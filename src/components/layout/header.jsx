@@ -46,7 +46,7 @@ const Header = () => {
       setColor(styles[`redPurple`]);
     } else {
       console.log("/etc");
-      setColor("#A5BECC");
+      setColor(styles[`skyBlue`]);
     }
   }, [location.pathname]);
   return (

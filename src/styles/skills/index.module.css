@@ -66,6 +66,9 @@
   line-height: 2rem;
 }
 .modal-detail p {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
   margin-bottom: 2rem;
 }
 .modal-detail p strong {

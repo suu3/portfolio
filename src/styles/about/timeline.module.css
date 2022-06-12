@@ -8,11 +8,19 @@
   font-size: 1.6rem;
   display: flex;
   align-items: center;
+  font-family: "NEXON Lv1 Gothic OTF LIGHT";
+}
+.time > span {
+  display: flex;
+}
+.time-content {
+  display: flex;
+  flex-wrap: wrap;
 }
 .time strong {
   display: inline-block;
-  font-weight: 600;
-  width: 17rem;
+  font-weight: 700;
+  width: 18rem;
 }
 .bar {
   width: 0.2rem;

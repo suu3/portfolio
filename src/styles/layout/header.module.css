@@ -1,4 +1,4 @@
-@value greenColor,darkPurple, lightOrangeColor, hotPink, redPurple, orangeColor, darkGrayColor from "styles/colors.css";
+@value greenColor,darkPurple, skyBlue, lightOrangeColor, hotPink, redPurple, orangeColor, darkGrayColor from "styles/colors.css";
 
 .header {
   --first-color: white;
@@ -16,7 +16,7 @@
   justify-content: center;
   z-index: 999;
   background-color: var(--last-color);
-  transition: all 1s linear;
+  transition: background-color 1s linear;
   /* animation: headerColor 1s linear forwards; */
   /* background: linear-gradient(-20deg, transparent 75%, black 25%); */
   box-shadow: 2px 1px 10px 1px rgba(0, 0, 0, 0.5);
