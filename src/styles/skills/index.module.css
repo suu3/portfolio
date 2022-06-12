@@ -1,4 +1,4 @@
-@value greenColor, redPurple, darkGrayColor, errorColor, orangeColor from "styles/colors.css";
+@value greenColor, redPurple, darkPurple, darkGrayColor, errorColor, orangeColor from "styles/colors.css";
 
 .skills h3 {
   font-size: 3rem;
@@ -59,8 +59,38 @@
 }
 .modal-detail {
   font-family: "NEXON Lv1 Gothic OTF LIGHT";
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-size: 1.6rem;
+}
+.modal-detail > span {
+  line-height: 2rem;
+}
+.modal-detail p {
+  margin-bottom: 2rem;
+}
+.modal-detail p strong {
+  --background-color: orangeColor;
+  --color: black;
+  font-family: "NEXON Lv1 Gothic OTF";
+  font-weight: 700;
+  color: var(--color);
+  background-color: var(--background-color);
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+}
+.modal-detail p strong svg {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.link {
+  margin-left: 1rem;
+  font-weight: 600;
+  transition: color 0.2s ease-in-out;
+}
+.link:hover {
+  cursor: pointer;
+  color: redPurple;
 }
 
 @media screen and (max-width: 800px) {

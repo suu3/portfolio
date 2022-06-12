@@ -49,6 +49,8 @@
 .modal-header {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #c9c9c9;
 }
 
 .modal-header > img:hover {
