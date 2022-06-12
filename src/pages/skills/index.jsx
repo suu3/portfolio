@@ -13,19 +13,38 @@ const activityTimelines = [
   {
     period: "2021. 09 - 2021. 12",
     content: "소프트웨어 학부 알고리즘 튜터링 ‘알튜비튜’",
+    detail: () => {
+      return (
+        <div className={styles[`modal-detail`]}>
+          이화여자대학교 소프트웨어학부에서 진행한 알고리즘 튜터링입니다. 해당
+          활동을 통해 여러가지 알고리즘 문제를 풀었습니다.
+          <p>
+            <strong>Github </strong>
+          </p>
+        </div>
+      );
+    },
   },
-
   {
     period: "2021. 12 - 2022. 02",
     content: "웹 프로그래밍 동아리 피로그래밍 16기",
+    detail: () => {
+      return <div>asdfddd</div>;
+    },
   },
   {
     period: "2022. 04 ~ ",
     content: "웹 프로그래밍 동아리 피로그래밍 17기 운영진 교육팀",
+    detail: () => {
+      return <div>asdfddd</div>;
+    },
   },
   {
     period: "2022. 03 - 2022. 06",
     content: "프로젝트 고도화 프로그램 UPF 2022SS",
+    detail: () => {
+      return <div>asdfddd</div>;
+    },
   },
 ];
 

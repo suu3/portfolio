@@ -28,3 +28,22 @@
   background-color: darkPurple;
   border-radius: 50%;
 }
+
+.detail {
+  margin-left: 1.5rem;
+  color: #414141;
+  font-weight: 600;
+  background-color: greenColor;
+  padding: 0.2rem 0.5rem;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.detail svg {
+  vertical-align: middle;
+  transform: translateY(-10%);
+}
+.detail:hover {
+  background-color: redPurple;
+  color: white;
+}

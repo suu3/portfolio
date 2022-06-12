@@ -14,4 +14,5 @@ export const IMAGES = {
 }
 
 export const ICONS = {
+    CLOSE: getIconsPath('close.svg')
 }

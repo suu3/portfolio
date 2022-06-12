@@ -57,6 +57,12 @@
   color: redPurple;
   width: 20rem;
 }
+.modal-detail {
+  font-family: "NEXON Lv1 Gothic OTF LIGHT";
+  margin-top: 3rem;
+  font-size: 1.6rem;
+}
+
 @media screen and (max-width: 800px) {
   .grid {
     grid-template-columns: 1fr;

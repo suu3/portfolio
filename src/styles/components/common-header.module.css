@@ -22,5 +22,6 @@
   font-size: 5rem;
   padding-bottom: 1rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
 }
