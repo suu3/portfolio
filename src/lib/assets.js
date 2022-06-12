@@ -12,6 +12,9 @@ export const IMAGES = {
     UNIVERSE: getImagesPath('stars.png'),
     EMOJI: getImagesPath('emoji.png'),
     BUDDY: getImagesPath('Buddy.png'),
+    GYMT: getImagesPath('Gymt.png'),
+    KNOCKKNOCK: getImagesPath('KnockKnock.png'),
+    PAWS: getImagesPath('Paws.png'),
 }
 
 export const ICONS = {

@@ -131,7 +131,7 @@ const Skills = (props) => {
             description={
               <p className={styles[`description`]}>
                 새로운 경험과 사람들과의 만남을 좋아하는 저는 여러 활동을
-                해왔습니다. :)
+                해왔습니다.
               </p>
             }
           />

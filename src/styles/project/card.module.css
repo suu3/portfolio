@@ -1,3 +1,5 @@
+@value greenColor,darkPurple, lightOrangeColor, hotPink, redPurple, orangeColor, darkGrayColor, skyBlue from "styles/colors.css";
+
 .card {
   display: flex;
   flex-direction: column;
@@ -6,11 +8,21 @@
   border-radius: 10%;
   font-size: 1.6rem;
   width: 30rem;
-  height: auto;
+  height: 47rem;
+  overflow: auto;
   background-color: rgb(236, 236, 236);
   font-family: "NEXON Lv1 Gothic OTF";
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
   transition: all 0.2s ease-in-out;
+}
+.card::-webkit-scrollbar {
+  width: 6px;
+}
+.card::-webkit-scrollbar-thumb {
+  background-color: orangeColor;
+}
+.card::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
 }
 .card:hover {
   cursor: pointer;
