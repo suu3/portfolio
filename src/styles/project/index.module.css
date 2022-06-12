@@ -8,22 +8,39 @@
   margin: 2rem 0;
   align-items: center;
 }
+
+.personal h4,
 .team h4,
 .category h4 {
   font-size: 2rem;
-  margin: 1rem 0;
+  margin: 2rem 0;
   font-family: "NEXON Lv1 Gothic OTF";
 }
 
+.personal {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
 .team > div {
   padding-bottom: 3rem;
 }
 
+.personal > div > ul,
 .team > div > ul {
   display: flex;
   gap: 2rem;
 }
-@media screen and (max-width: 1000px) {
+
+@media screen and (max-width: 1500px) {
+  .personal {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .personal > div > ul,
   .team > div > ul {
     flex-direction: column;
   }

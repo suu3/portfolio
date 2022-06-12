@@ -60,7 +60,8 @@ export const teamProjectList2022 =[
             content: "NodeJS",
             backgroundColor: "#FFC54D",
         }]
-    },    {
+    },
+    {
         path: "/project/paws",
         imageSrc: IMAGES.PAWS,
         title: <span>반려동물 숏 폼 모바일 웹 "PAWS"</span>,
@@ -79,4 +80,78 @@ export const teamProjectList2022 =[
             color: "white"
         }]
     }
+];
+
+
+export const sideProjectList2021 =[
+    {
+        path: "/project/ToDo",
+        imageSrc: IMAGES.TODO,
+        title: <span>삶과 일의 균형을 <br/>확인할 수 있는 투 두 리스트,<br/> "Balancing Life"</span>,
+        period: "2021/11/08 - 2021/12/17",
+        category: { backgroundColor: "rgb(192, 293, 67)", content: "Mobile"},
+        stack: [{
+            content: "React Native",
+            backgroundColor: "#F47C7C",
+        },{
+            content: "Expo",
+            backgroundColor: "#839AA8",
+
+        }]
+    },
+    {
+        path: "/project/knockknock",
+        imageSrc: IMAGES.RAINBOW,
+        title: <span>의류 쇼핑몰 정보 분석 웹, "Rainbow"</span>,
+        period: "2021/10/02 - 2021/11/21",
+        category: { backgroundColor: "rgb(255, 154, 119)", content: "Web"},
+        stack: [{
+            content: "XAMPP",
+            backgroundColor: "#DF7861",
+        }]
+    },
+];
+
+export const personalProjectList2021 =[
+    {
+        path: "/project/ToDo",
+        title: <span>삶과 일의 균형을 <br/>확인할 수 있는 투 두 리스트,<br/> "Balancing Life"</span>,
+        period: "2021/11/08 - 2021/12/17",
+        category: { backgroundColor: "rgb(192, 293, 67)", content: "Mobile"},
+        stack: [{
+            content: "React Native",
+            backgroundColor: "#F47C7C",
+        },{
+            content: "Expo",
+            backgroundColor: "#839AA8",
+
+        }]
+    },
+    {
+        path: "/project/knockknock",
+        title: <span>의류 쇼핑몰 정보 분석 웹, "Rainbow"</span>,
+        period: "2021/10/02 - 2021/11/21",
+        category: { backgroundColor: "rgb(255, 154, 119)", content: "Web"},
+        stack: [{
+            content: "XAMPP",
+            backgroundColor: "#DF7861",
+        }]
+    },
+];
+
+export const personalProjectList2022 =[
+    {
+        path: "/project/ToDo",
+        title: <span>삶과 일의 균형을 <br/>확인할 수 있는 투 두 리스트,<br/> "Balancing Life"</span>,
+        period: "2021/11/08 - 2021/12/17",
+        category: { backgroundColor: "rgb(192, 293, 67)", content: "Mobile"},
+        stack: [{
+            content: "React Native",
+            backgroundColor: "#F47C7C",
+        },{
+            content: "Expo",
+            backgroundColor: "#839AA8",
+
+        }]
+    },
 ];

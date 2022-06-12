@@ -69,8 +69,14 @@ const Home = () => {
             <li>Awards</li>
           </ul>
         </div>
-        <div onClick={() => navigate("/projects")}>
-          Project<p>click me</p>
+        <div onClick={() => navigate("/project")}>
+          Project
+          {/* <p>click me</p> */}
+          <ul className={styles[`list`]}>
+            <li>Team Project</li>
+            <li>Side Project</li>
+            <li>Personal Education</li>
+          </ul>
         </div>
       </section>
     </section>

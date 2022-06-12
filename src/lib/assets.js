@@ -15,6 +15,8 @@ export const IMAGES = {
     GYMT: getImagesPath('Gymt.png'),
     KNOCKKNOCK: getImagesPath('KnockKnock.png'),
     PAWS: getImagesPath('Paws.png'),
+    TODO: getImagesPath('ToDo.png'),
+    RAINBOW: getImagesPath('Rainbow.png'),
 }
 
 export const ICONS = {

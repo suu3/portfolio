@@ -7,8 +7,15 @@ import HashTag from "components/hash-tag";
 import { BsFillPeopleFill, BsFillPersonFill } from "react-icons/bs";
 import { MdSmartToy } from "react-icons/md";
 import Card from "components/project/card";
+import NoImageCard from "components/project/no-image-card";
 import MultiHashTag from "components/multi-hash-tag";
-import { teamProjectList2021, teamProjectList2022 } from "lib/projects";
+import {
+  teamProjectList2021,
+  teamProjectList2022,
+  sideProjectList2021,
+  personalProjectList2021,
+  personalProjectList2022,
+} from "lib/projects";
 import AOS from "aos";
 
 const projectSide = [
@@ -159,12 +166,75 @@ const Index = (props) => {
         </article>
         <div className="divider"></div>
         <SubTitle id="side" icon={<MdSmartToy />} content="Side Project" />
+        <article className={styles[`team`]}>
+          <div>
+            {(year === "2021" || year === "All") && <h4>- 2021</h4>}
+            <ul>
+              {(year === "2021" || year === "All") &&
+                sideProjectList2021.map((v, i) => {
+                  if (!services.includes(v.category.content)) return <></>;
+                  return (
+                    <Card
+                      title={v.title}
+                      key={i}
+                      imageSrc={v.imageSrc}
+                      path={v.path}
+                      period={v.period}
+                      category={v.category}
+                      stack={v.stack}
+                    />
+                  );
+                })}
+            </ul>
+          </div>
+        </article>
         <div className="divider"></div>
         <SubTitle
           id="personal"
           icon={<BsFillPersonFill />}
-          content="Personal Project"
+          content="Personal Study(Project)"
         />
+        <article className={styles[`personal`]}>
+          <div>
+            {(year === "2021" || year === "All") && <h4>- 2021</h4>}
+            <ul>
+              {(year === "2021" || year === "All") &&
+                personalProjectList2021.map((v, i) => {
+                  if (!services.includes(v.category.content)) return <></>;
+                  return (
+                    <NoImageCard
+                      title={v.title}
+                      key={i}
+                      path={v.path}
+                      period={v.period}
+                      category={v.category}
+                      stack={v.stack}
+                    />
+                  );
+                })}
+            </ul>
+          </div>
+          <div>
+            {(year === "2022" || year === "All") && <h4>- 2022</h4>}
+            <ul>
+              {(year === "2022" || year === "All") &&
+                personalProjectList2022.map((v, i) => {
+                  if (!services.includes(v.category.content)) return <></>;
+                  return (
+                    <NoImageCard
+                      title={v.title}
+                      key={i}
+                      imageSrc={v.imageSrc}
+                      path={v.path}
+                      period={v.period}
+                      category={v.category}
+                      stack={v.stack}
+                    />
+                  );
+                })}
+            </ul>
+          </div>
+        </article>
       </section>
     </>
   );
