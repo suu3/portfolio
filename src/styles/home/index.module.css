@@ -1,4 +1,4 @@
-@value greenColor, darkGrayColor, errorColor, orangeColor from "styles/colors.css";
+@value greenColor, redPurple, darkGrayColor, errorColor, orangeColor from "styles/colors.css";
 
 .home {
   height: 100vh;
@@ -169,7 +169,12 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: darkGrayColor;
+  /* background-color: darkGrayColor; */
+  /* background-color: black; */
+  border: 3px solid black;
+  color: black;
+  /* color: white; */
+  padding: 3rem 0;
   transition: all 0.2s ease-in-out;
 }
 
@@ -212,4 +217,17 @@
   grid-column-start: 2;
   grid-row-start: 2;
   grid-column-end: 3;
+}
+
+@media screen and (max-width: 1200px) {
+  .home {
+    flex-direction: column;
+  }
+  .text {
+    width: 100%;
+  }
+  .menu {
+    width: 100%;
+    height: 100%;
+  }
 }
