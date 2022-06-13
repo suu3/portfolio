@@ -35,6 +35,16 @@ export const GYMT_IMAGES = {
   LOGIN: getImagesPath("gymt/login.png"),
 }
 
+export const KNOCK_IMAGES = {
+  LOGO: getImagesPath("knock/logo.png"),
+  DESCRIPTION: getImagesPath("knock/description.png"),
+  ERD: getImagesPath("knock/erd.png"),
+  SETTING: getImagesPath("knock/슬라이드1.png"),
+  ENROLL: getImagesPath("knock/슬라이드2.png"),
+  MYPAGE: getImagesPath("knock/슬라이드3.png"),
+  LOGIN: getImagesPath("knock/슬라이드4.png"),
+  REACT: getImagesPath("knock/react.png"),
+};
 export const ICONS = {
   CLOSE: getIconsPath("close.svg"),
 };
