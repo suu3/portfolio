@@ -27,6 +27,14 @@ export const BUDDY_IMAGES = {
 
 };
 
+export const GYMT_IMAGES = {
+  DESCRIPTION: getImagesPath("Gymt/description.png"),
+  LOGO: getImagesPath("Gymt/logo.png"),
+  HOME: getImagesPath("Gymt/home.png"),
+  LIST: getImagesPath("Gymt/list.png"),
+  LOGIN: getImagesPath("Gymt/login.png"),
+}
+
 export const ICONS = {
   CLOSE: getIconsPath("close.svg"),
 };
