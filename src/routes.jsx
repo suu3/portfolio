@@ -1,6 +1,7 @@
 import { lazy } from "react";
 import { useRoutes } from "react-router-dom";
 import LayoutContainer from "pages/layout";
+const Paws = lazy(() => import("pages/project/paws"));
 const Error = lazy(() => import("./error"));
 const About = lazy(() => import("pages/about"));
 const Skills = lazy(() => import("pages/skills"));
@@ -34,6 +35,7 @@ export default function Routes() {
             { path: "buddy", element: <Buddy /> },
             { path: "gymt", element: <Gymt /> },
             { path: "knockknock", element: <KnockKnock /> },
+            { path: "paws", element: <Paws /> },
           ],
         },
       ],

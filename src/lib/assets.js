@@ -34,7 +34,14 @@ export const GYMT_IMAGES = {
   LIST: getImagesPath("gymt/list.png"),
   LOGIN: getImagesPath("gymt/login.png"),
 }
-
+export const PAWS_IMAGES = {
+  DESCRIPTION: getImagesPath("paws/description.png"),
+  LOGO: getImagesPath("paws/logo.png"),
+  SEARCH: getImagesPath("paws/search.png"),
+  SCROLL: getImagesPath("paws/scroll.png"),
+  UPLOAD: getImagesPath("paws/upload.png"),
+  API: getImagesPath("paws/api.png"),
+}
 export const KNOCK_IMAGES = {
   LOGO: getImagesPath("knock/logo.png"),
   DESCRIPTION: getImagesPath("knock/description.png"),
