@@ -21,18 +21,18 @@ export const IMAGES = {
 };
 
 export const BUDDY_IMAGES = {
-  LOGO: getImagesPath("Buddy/Buddy.png"),
-  LOOK: getImagesPath("Buddy/Buddy_3d.png"),
-  POSTER: getImagesPath("Buddy/poster.png"),
+  LOGO: getImagesPath("buddy/Buddy.png"),
+  LOOK: getImagesPath("buddy/Buddy_3d.png"),
+  POSTER: getImagesPath("buddy/poster.png"),
 
 };
 
 export const GYMT_IMAGES = {
-  DESCRIPTION: getImagesPath("Gymt/description.png"),
-  LOGO: getImagesPath("Gymt/logo.png"),
-  HOME: getImagesPath("Gymt/home.png"),
-  LIST: getImagesPath("Gymt/list.png"),
-  LOGIN: getImagesPath("Gymt/login.png"),
+  DESCRIPTION: getImagesPath("gymt/description.png"),
+  LOGO: getImagesPath("gymt/logo.png"),
+  HOME: getImagesPath("gymt/home.png"),
+  LIST: getImagesPath("gymt/list.png"),
+  LOGIN: getImagesPath("gymt/login.png"),
 }
 
 export const ICONS = {
