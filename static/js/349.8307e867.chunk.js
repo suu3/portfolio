@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkknockknock=self.webpackChunkknockknock||[]).push([[349],{1349:function(e,c,r){r.r(c);r(2791);var t=r(184);c.default=function(e){return(0,t.jsxs)("div",{children:["Buddy",(0,t.jsx)("iframe",{width:"560",height:"315",src:"https://www.youtube.com/embed/1pYcX_lvk3s",title:"YouTube video player",frameBorder:"0",allow:"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",allowFullScreen:!0})]})}}}]);
-//# sourceMappingURL=349.8307e867.chunk.js.map
