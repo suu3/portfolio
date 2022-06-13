@@ -5,7 +5,7 @@
   font-weight: 600;
   display: flex;
   flex-wrap: wrap;
-  margin: 2rem 0;
+  margin: 4rem 0 2rem 0;
   align-items: flex-end;
 }
 
@@ -33,6 +33,11 @@
   padding: 0.5rem 2rem;
   border-radius: 2rem;
 }
+
+.info {
+  padding-bottom: 2rem;
+}
+
 .github strong {
   --background-color: orangeColor;
   --color: black;
@@ -79,4 +84,26 @@
 .tool strong {
   font-weight: 600;
   width: 15rem;
+}
+
+.description {
+  font-family: "NEXON Lv1 Gothic OTF";
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+.description p {
+  margin: 0.5rem 0;
+}
+.description p string {
+  font-weight: 600;
+}
+
+.scenario {
+  font-family: "NEXON Lv1 Gothic OTF";
+  font-size: 1.6rem;
+}
+
+.scenario p {
+  margin: 0.5rem 0;
 }

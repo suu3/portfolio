@@ -1,3 +1,4 @@
+@value greenColor, redPurple, darkPurple, darkGrayColor, errorColor, orangeColor from "styles/colors.css";
 .header {
   font-size: 8rem;
   padding-bottom: 1rem;
@@ -24,4 +25,22 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.project-sub-title {
+  font-size: 8rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.goBack {
+  font-size: 3rem;
+  font-family: "NEXON Lv1 Gothic OTF";
+  margin-bottom: 3rem;
+}
+.goBack:hover {
+  color: redPurple;
+  cursor: pointer;
 }

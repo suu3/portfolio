@@ -6,6 +6,7 @@ const About = lazy(() => import("pages/about"));
 const Skills = lazy(() => import("pages/skills"));
 const Home = lazy(() => import("pages/home"));
 const Buddy = lazy(() => import("pages/project/buddy"));
+const Gymt = lazy(() => import("pages/project/gymt"));
 const KnockKnock = lazy(() => import("pages/project/knockknock"));
 const Project = lazy(() => import("pages/project"));
 
@@ -31,6 +32,7 @@ export default function Routes() {
           children: [
             { index: true, element: <Project /> },
             { path: "buddy", element: <Buddy /> },
+            { path: "gymt", element: <Gymt /> },
             { path: "knockknock", element: <KnockKnock /> },
           ],
         },

@@ -21,7 +21,10 @@ export const IMAGES = {
 };
 
 export const BUDDY_IMAGES = {
-  LOGO: getImagesPath("Buddy/Buddy.jpg"),
+  LOGO: getImagesPath("Buddy/Buddy.png"),
+  LOOK: getImagesPath("Buddy/Buddy_3d.png"),
+  POSTER: getImagesPath("Buddy/poster.png"),
+
 };
 
 export const ICONS = {
