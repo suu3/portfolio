@@ -11,10 +11,10 @@ const ProjectSubTitle = ({
   const navigate = useNavigate();
   return (
     <div>
-      <span onClick={() => navigate("/project")} className={styles[`goBack`]}>
+      <span onClick={() => navigate("/project")} className={styles["goBack"]}>
         돌아가기
       </span>
-      <h1 id={id} className={styles[`project-sub-title`]}>
+      <h1 id={id} className={styles["project-sub-title"]}>
         {icon && icon}
         {content}
         {description && description}

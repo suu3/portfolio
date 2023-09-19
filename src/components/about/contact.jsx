@@ -1,24 +1,24 @@
 import React from "react";
 import styles from "styles/about/index.module.css";
 
-const Contact = (props) => {
+const Contact = () => {
   return (
     <article className={styles[`contact`]}>
       <p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-        <strong>Tel</strong> 010-2674-1080
+        <strong>Tel</strong> 000-0000-0000
       </p>
       <p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-        <strong>E-mail</strong> ahob789@ewhain.net
+        <strong>E-mail</strong> user@email.com
       </p>
       <p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
         <strong>Github</strong>
         <span
           className={styles[`link`]}
           onClick={() => {
-            window.location.href = "https://github.com/suu3";
+            window.location.href = "#";
           }}
         >
-          https://github.com/suu3
+          github link
         </span>
       </p>
       <p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
@@ -26,10 +26,10 @@ const Contact = (props) => {
         <span
           className={styles[`link`]}
           onClick={() => {
-            window.location.href = "https://temp-ha3.tistory.com";
+            window.location.href = "#";
           }}
         >
-          https://temp-ha3.tistory.com
+          blog link
         </span>
       </p>
     </article>

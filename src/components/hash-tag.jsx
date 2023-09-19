@@ -4,7 +4,7 @@ const HashTag = ({ category, onClick, backgroundColor, color, content }) => {
   return (
     <div
       onClick={onClick}
-      className={styles[`hash-tag`]}
+      className={styles["hash-tag"]}
       style={
         category === content
           ? { "--background-color": backgroundColor, "--color": color }

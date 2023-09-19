@@ -58,38 +58,6 @@ const Skills = (props) => {
                 alt="stack"
                 src="https://img.shields.io/badge/JavaScript-ffb13b?style=flat-square&logo=javascript&logoColor=white"
               />
-              <img
-                alt="stack"
-                src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"
-              />
-              <img
-                alt="stack"
-                src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white"
-              />
-              <img
-                alt="stack"
-                src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white"
-              />
-              <img
-                alt="stack"
-                src="https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white"
-              />
-              <img
-                alt="stack"
-                src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=Django&logoColor=white"
-              />
-              <img
-                alt="stack"
-                src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"
-              />
-              <img
-                alt="stack"
-                src="https://img.shields.io/badge/React Native-61DAFB?style=flat-square&logo=React&logoColor=white"
-              />
-              <img
-                alt="stack"
-                src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=Firebase&logoColor=white"
-              />
             </p>
           </div>
           <div className={styles[`score`]}>
@@ -103,7 +71,7 @@ const Skills = (props) => {
                 data-aos-duration="1000"
                 data-aos-once="true"
               >
-                <strong>학점</strong> 4.11 / 4.3
+                <strong>certificate</strong> 1
               </li>
               <li
                 data-aos="fade-up"
@@ -111,15 +79,7 @@ const Skills = (props) => {
                 data-aos-duration="1000"
                 data-aos-once="true"
               >
-                <strong>JLPT</strong> N2
-              </li>
-              <li
-                data-aos="fade-up"
-                data-aos-delay="200"
-                data-aos-duration="1000"
-                data-aos-once="true"
-              >
-                <strong>TOEIC</strong> 870
+                <strong>certificate</strong> 2
               </li>
             </ul>
           </div>
@@ -128,12 +88,7 @@ const Skills = (props) => {
           <SubTitle
             content="Activities"
             id="activities"
-            description={
-              <p className={styles[`description`]}>
-                새로운 경험과 사람들과의 만남을 좋아하는 저는 여러 활동을
-                해왔습니다.
-              </p>
-            }
+            description={<p className={styles["description"]}>description</p>}
           />
           <TimeLine timelines={activityTimelines} />
         </article>

@@ -8,6 +8,7 @@ const SideBar = ({ obj }) => {
     const yOffset = -80;
     window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
   };
+
   return (
     <aside className={styles[`side`]}>
       <ul>

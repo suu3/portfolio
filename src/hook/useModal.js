@@ -1,21 +1,22 @@
-import {useState, useRef} from 'react';
+import { useState, useRef } from "react";
+import useOutsideClick from "./useOutsideClick";
 
-const useModal = ({className}) => {
-    const [modalShow, setModalShow] = useState(false);
-  
-    const modal = useRef();
-  
-    const handleCloseModal = (e) => {
-      if (
-        modal.current &&
-        !modal.current.contains(e.target) &&
-        e.target.className !== className
-      ) {
-        setModalShow(false);
-        return;
-      }
-    };
-    return {modalShow, modal, setModalShow, handleCloseModal};
+const useModal = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const showModal = () => {
+    setIsOpen(true);
+  };
+
+  const hideModal = () => {
+    setIsOpen(false);
+  };
+
+  const modalRef = useOutsideClick(() => {
+    hideModal();
+  });
+
+  return { isOpen, modalRef, hideModal, showModal };
 };
 
 export default useModal;

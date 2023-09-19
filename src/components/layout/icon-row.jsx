@@ -11,22 +11,22 @@ const IconRow = () => {
         <li>
           <AiFillGithub
             onClick={() => {
-              window.location.href = "https://github.com/suu3";
+              window.location.href = "#";
             }}
           />
         </li>
         <li>
           <ImBlogger
             onClick={() => {
-              window.location.href = "https://temp-ha3.tistory.com/";
+              window.location.href = "#";
             }}
           />
         </li>
-        <Tooltip placement="top" title="ahob789@ewhain.net" arrow>
+        <Tooltip placement="top" title="email address" arrow>
           <li>
             <AiFillMail
               onClick={() => {
-                window.location.href = "mailto:ahob789@ewhain.net";
+                window.location.href = "#";
               }}
             />
           </li>

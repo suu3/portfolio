@@ -5,11 +5,11 @@ import useModal from "hook/useModal";
 import { ICONS } from "lib/assets";
 import { AiOutlineCaretRight } from "react-icons/ai";
 
-const ModalHeader = ({ setShow, title }) => {
+const ModalHeader = ({ hideModal, title }) => {
   return (
     <>
       <span style={{ fontWeight: 600 }}>{title}</span>
-      <img onClick={() => setShow(false)} src={ICONS.CLOSE} alt="close" />
+      <img onClick={hideModal} src={ICONS.CLOSE} alt="close" />
     </>
   );
 };
@@ -21,16 +21,8 @@ const ModalBody = ({ detail }) => {
 export default function TimeLine({ timelines }) {
   const [title, setTitle] = useState("");
   const [detail, setDetail] = useState("");
-  const { modalShow, modal, setModalShow, handleCloseModal } = useModal({
-    className: styles[`detail`],
-  });
+  const { isOpen, modalRef, hideModal, showModal } = useModal();
 
-  useEffect(() => {
-    window.addEventListener("click", handleCloseModal);
-    return () => {
-      window.removeEventListener("click", handleCloseModal);
-    };
-  }, [handleCloseModal]);
   return (
     <article className={styles[`article`]}>
       {timelines.map((v, i) => {
@@ -49,7 +41,7 @@ export default function TimeLine({ timelines }) {
                   {v.detail && (
                     <button
                       onClick={() => {
-                        setModalShow(true);
+                        showModal();
                         setTitle(v.content);
                         setDetail(v.detail);
                       }}
@@ -83,7 +75,6 @@ export default function TimeLine({ timelines }) {
                     {v.detail && (
                       <button
                         onClick={() => {
-                          setModalShow(true);
                           setTitle(v.content);
                           setDetail(v.detail);
                         }}
@@ -99,10 +90,10 @@ export default function TimeLine({ timelines }) {
           );
         }
       })}
-      {modalShow && (
+      {isOpen && (
         <Modal
-          ref={modal}
-          header={<ModalHeader setShow={setModalShow} title={title} />}
+          ref={modalRef}
+          header={<ModalHeader hideModal={hideModal} title={title} />}
           body={<ModalBody detail={detail} />}
           height="80%"
         />

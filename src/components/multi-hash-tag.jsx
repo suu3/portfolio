@@ -7,20 +7,20 @@ const MultiHashTag = ({
   onClick,
   backgroundColor,
   color,
-  content,
+  filter,
 }) => {
   return (
     <div
       onClick={onClick}
-      className={styles[`hash-tag`]}
+      className={styles["hash-tag"]}
       style={
-        category.includes(content)
+        category.includes(filter)
           ? { "--background-color": backgroundColor, "--color": color }
           : { "--background-color": "transparent", "--color": color }
       }
     >
-      {content}
-      {category.includes(content) ? <AiFillEye /> : <AiFillEyeInvisible />}
+      {filter}
+      {category.includes(filter) ? <AiFillEye /> : <AiFillEyeInvisible />}
     </div>
   );
 };
